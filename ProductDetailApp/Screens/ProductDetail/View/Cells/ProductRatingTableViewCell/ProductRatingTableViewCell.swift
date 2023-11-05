@@ -17,7 +17,8 @@ class ProductRatingTableViewCell: ProductDetailsTableViewCell {
     override var viewModel: ProductDetailsCellViewModel? {
         didSet {
             guard let cellViewModel = viewModel as? ProductRatingTableCellViewModel else {return}
-            productAverageRating.text = "\(cellViewModel.rating)"
+            let ratingDouble = Double(cellViewModel.rating)
+            productAverageRating.text = String(format: "%.1f", ratingDouble)
             productReviewCount.text = " ( \(cellViewModel.reviews) \(Constants.StaticText.reviewsString) )"
             starHighlighten(ratings: cellViewModel.rating)
         }
