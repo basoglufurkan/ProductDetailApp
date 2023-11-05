@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,35 +33,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVd-Ml-T6N">
                                 <rect key="frame" x="37" y="8.6666666666666643" width="75" height="15"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-MX-RBN">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" highlightedImage="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-MX-RBN">
                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="CZt-k7-lJK"/>
                                             <constraint firstAttribute="height" constant="15" id="D7g-4v-ttq"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-HN-VGF">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" highlightedImage="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-HN-VGF">
                                         <rect key="frame" x="15" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="mX8-EB-WEw"/>
                                             <constraint firstAttribute="height" constant="15" id="mr5-3w-0fU"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" translatesAutoresizingMaskIntoConstraints="NO" id="f96-Rs-0Xc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" highlightedImage="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="f96-Rs-0Xc">
                                         <rect key="frame" x="30" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="UR9-v5-Nbp"/>
                                             <constraint firstAttribute="width" constant="15" id="ozF-Tz-7gr"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" translatesAutoresizingMaskIntoConstraints="NO" id="Weu-tF-RXL">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" highlightedImage="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="Weu-tF-RXL">
                                         <rect key="frame" x="45" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="6Fo-y2-LrV"/>
                                             <constraint firstAttribute="height" constant="15" id="Efs-f7-TEW"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-I9-RR9">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarBig" highlightedImage="iconStarFillBig" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-I9-RR9">
                                         <rect key="frame" x="60" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="H8B-MX-Ib2"/>
@@ -99,6 +99,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productAverageRating" destination="2ZR-6f-Uau" id="cfM-Jf-PaK"/>
+                <outlet property="productReviewCount" destination="MBE-PE-Hql" id="gRC-pK-48h"/>
+                <outletCollection property="star" destination="hpa-MX-RBN" collectionClass="NSMutableArray" id="2Ju-vq-zrK"/>
+                <outletCollection property="star" destination="Rnu-HN-VGF" collectionClass="NSMutableArray" id="HUY-Kt-2hx"/>
+                <outletCollection property="star" destination="f96-Rs-0Xc" collectionClass="NSMutableArray" id="Ejo-1b-Obl"/>
+                <outletCollection property="star" destination="Weu-tF-RXL" collectionClass="NSMutableArray" id="Vd2-zN-uvF"/>
+                <outletCollection property="star" destination="Ki0-I9-RR9" collectionClass="NSMutableArray" id="uXV-fK-jvw"/>
+            </connections>
             <point key="canvasLocation" x="-15.267175572519083" y="-15.492957746478874"/>
         </tableViewCell>
     </objects>
