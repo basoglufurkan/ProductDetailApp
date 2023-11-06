@@ -31,6 +31,7 @@ class ProductAmountTableViewCell: ProductDetailsTableViewCell {
     }
 
     func initView() {
+        selectionStyle = .none
         // Cell view customization
         backgroundColor = .clear
         // Line separator full width

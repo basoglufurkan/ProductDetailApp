@@ -7,6 +7,8 @@
 
 import Foundation
 
+import Foundation
+
 protocol ProductDetailsServiceProtocol {
     func getBasicDetails(completion: @escaping (_ success: Bool, _ results: Product?, _ error: String?) -> ())
     func getSocialDetails(completion: @escaping (_ success: Bool, _ results: Social?, _ error: String?) -> ())
@@ -43,4 +45,3 @@ class ProductDetailsService: ProductDetailsServiceProtocol {
         }
     }
 }
- 

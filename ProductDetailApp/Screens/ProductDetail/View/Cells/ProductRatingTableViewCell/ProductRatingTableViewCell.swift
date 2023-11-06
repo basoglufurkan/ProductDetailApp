@@ -30,6 +30,7 @@ class ProductRatingTableViewCell: ProductDetailsTableViewCell {
     }
 
     func initView() {
+        selectionStyle = .none
         // Cell view customization
         backgroundColor = .clear
         // Line separator full width
@@ -47,8 +48,6 @@ class ProductRatingTableViewCell: ProductDetailsTableViewCell {
     }
     
     private func starHighlighten(ratings: Int) {
-        /// removed exisitng stars if exists
-        /// loop through the number of our stars and add them to the stackView (starsContainer)
         for (index, ico) in star.enumerated() {
             if ratings > index {
                 ico.isHighlighted = true

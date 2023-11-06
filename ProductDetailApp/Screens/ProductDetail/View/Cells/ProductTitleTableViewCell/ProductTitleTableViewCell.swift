@@ -34,6 +34,7 @@ class ProductTitleTableViewCell: ProductDetailsTableViewCell {
         preservesSuperviewLayoutMargins = false
         separatorInset = UIEdgeInsets.zero
         layoutMargins = UIEdgeInsets.zero
+        selectionStyle = .none
     }
     
     override func prepareForReuse() {

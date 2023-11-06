@@ -48,6 +48,7 @@ class ProductImageTableViewCell: ProductDetailsTableViewCell {
         backgroundColor = .clear
         // Line separator full width
         preservesSuperviewLayoutMargins = false
+        selectionStyle = .none
         separatorInset = UIEdgeInsets.zero
         layoutMargins = UIEdgeInsets.zero
     }
